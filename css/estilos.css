@@ -38,7 +38,7 @@ body {
   background-color: rgb(84, 164, 218);
   animation: cambioFondo 30s linear infinite alternate;
   display: grid;
-  grid-template-rows: 12vh 71vh 17vh;
+  grid-template-rows: 12vh 65vh 23vh;
 }
 
 /***************     header       ***************/
