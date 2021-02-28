@@ -65,7 +65,6 @@ a {
   height: 3.5rem;
   justify-content: center;
   align-items: center;
-  /*text-align: center;*/
   text-decoration: none;
   padding: 7px 2px;
   margin: 5px auto;
@@ -73,7 +72,6 @@ a {
   border-color: rgb(101, 76, 141);
   border-radius: 20px;
   background-color: #fae0cf;
-  /*background-color: transparent;*/
   animation: desplazamientoBoton 3s linear forwards;
 }
 a:hover {
@@ -177,10 +175,7 @@ footer > div {
   main {
     grid-template-columns: auto auto auto;
   }
-  /* a:first-child {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }*/
+
   a:nth-child(2) {
     grid-column: 2/3;
     grid-row: 1/2;
