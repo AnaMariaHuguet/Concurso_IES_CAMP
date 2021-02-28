@@ -126,7 +126,7 @@ footer > div {
 
 /*****************media query***********************/
 
-@media (min-width: 768px){
+@media (min-width: 500px){
 
   h1 {
     font: 3.2rem Montserrat, fantasy;
