@@ -60,7 +60,7 @@ main {
 a {
   display: flex;
   width: 18rem;
-  height: 3.6rem;
+  height: 3.7rem;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -138,7 +138,7 @@ footer div {
   }
 
   a {
-    height: 5.5rem;
+    height: 5rem;
   }
   a:first-child {
     grid-column: 1/2;
@@ -172,7 +172,9 @@ footer div {
   main {
     grid-template-columns: auto auto auto;
   }
-
+a {
+    height: 5.5rem;
+  }
   a:nth-child(2) {
     grid-column: 2/3;
     grid-row: 1/2;
