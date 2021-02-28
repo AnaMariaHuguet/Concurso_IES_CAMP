@@ -1,0 +1,196 @@
+/* jQuery and flex boxes 2021 */
+/* Write the rules of style in an orderly and optimal way */
+/* jQuery and flex boxes 2021 */
+/* Write the rules of style in an orderly and optimal way */
+/**********   tipografia *********/
+/*h1:  font: 2.2em MV boli, fantasy;*/
+/*h2:  font: 1.2em Montserrat, fantasy;*/
+/*h3:  font: 1rem "Lobster", "Impallari Type", "Cyreal";*/
+
+/********** paleta de colores **********/
+
+* {
+  font: 16px/1.6 Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/***************     tipografia     ***************/
+h3 {
+  font: 1rem "Lobster", "Impallari Type", "Cyreal";
+  text-align: center;
+}
+h1,
+a {
+  padding: 3px;
+  /*font: 2.2rem MV boli, fantasy;*/
+  font: 2rem Montserrat, fantasy;
+  color: black;
+}
+
+/***************     body     ***************/
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  background-color: rgb(84, 164, 218);
+  animation: cambioFondo 30s linear infinite alternate;
+  display: grid;
+  grid-template-rows: 12vh 75vh 13vh;
+}
+
+/***************     header       ***************/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/***************   main    ***************/
+main {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+a {
+  display: flex;
+  width: 18rem;
+  height: 3.6rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 5px solid;
+  border-color: rgb(101, 76, 141);
+  border-radius: 20px;
+  background-color: #fae0cf;
+  animation: desplazamientoBoton 3s linear forwards;
+}
+a:hover {
+  background-color: #271cad;
+  color: #fae0cf;
+}
+
+/***************     footer      ***************/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  /*align-items: center;*/
+  justify-content: space-evenly;
+}
+footer h3 {
+  /*margin: 0 1rem;*/
+  font-weight: bold;
+}
+footer div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*****************animations***********************/
+
+@keyframes cambioFondo {
+  0% {
+    background-image: url(../images/background-213649_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  50% {
+    background-image: url(../images/piramidal1.jpg);
+    background-size: cover;
+  }
+  100% {
+    background-image: url(../images/business.png);
+    background-size: cover;
+  }
+}
+@keyframes desplazamientoBoton {
+  0% {
+    opacity: 0;
+    left: 100%;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    left: 0%;
+    transform: scale(1);
+  }
+}
+
+/*****************media query***********************/
+
+@media (min-width: 600px) {
+  h1 {
+    font: 3.2rem Montserrat, fantasy;
+  }
+
+  main {
+    grid-template-columns: auto auto;
+  }
+
+  a {
+    height: 5.5rem;
+  }
+  a:first-child {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  a:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  a:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  a:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  a:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  a:nth-child(6) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  main {
+    grid-template-columns: auto auto auto;
+  }
+
+  a:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  a:nth-child(3) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  a:nth-child(4) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  a:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  a:nth-child(6) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+}
